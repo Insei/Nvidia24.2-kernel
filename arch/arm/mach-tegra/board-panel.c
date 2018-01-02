@@ -114,8 +114,6 @@ int tegra_panel_reset(struct tegra_panel_of *panel, unsigned int delay_ms)
 
 static int tegra_bl_notify(struct device *dev, int brightness)
 {
-	int cur_sd_brightness;
-
 	struct lp855x *lp = NULL;
 	struct platform_device *pdev = NULL;
 	struct device *dc_dev;
@@ -161,10 +159,6 @@ static int tegra_bl_notify(struct device *dev, int brightness)
 
 	if (bl_curve)
 		brightness = bl_curve[brightness];
-
-	cur_sd_brightness = atomic_read(&sd_brightness);
-	/* SD brightness is a percentage */
-	brightness = (brightness * cur_sd_brightness) / 255;
 
 	if (bl_measured)
 		brightness = bl_measured[brightness];
@@ -590,6 +584,9 @@ static struct device_node *available_internal_panel_select(
 	} else if (of_device_is_compatible(np_panel, "o,720-1280-6-0-01")) {
 		tegra_panel_register_ops(dc_out,
 			&dsi_o_720p_6_0_01_ops);
+	} else if (of_device_is_compatible(np_panel, "s,wqxga-7-9-x6")) {
+		tegra_panel_register_ops(dc_out,
+			&dsi_s_wqxga_7_9_x6_ops);
 	} else {
 		pr_info("invalid panel compatible\n");
 		of_node_put(np_panel);

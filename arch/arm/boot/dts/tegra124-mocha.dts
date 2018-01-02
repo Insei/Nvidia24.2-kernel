@@ -26,6 +26,7 @@
 #include "tegra124-platforms/tegra124-mocha-pinmux-e1780.dtsi"
 #include "tegra124-platforms/tegra124-mocha-sysedp.dtsi"
 #include "tegra124-platforms/tegra124-mocha-power-tree.dtsi"
+#include "tegra124-platforms/tegra124-mocha-screen.dtsi"
 
 / {
 	model = "NVIDIA Tegra124 TN8";
