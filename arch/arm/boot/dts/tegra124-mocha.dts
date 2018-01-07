@@ -28,6 +28,7 @@
 #include "tegra124-platforms/tegra124-mocha-power-tree.dtsi"
 #include "tegra124-platforms/tegra124-mocha-screen.dtsi"
 #include "tegra124-platforms/tegra124-mocha-sdhci.dtsi"
+#include "tegra124-platforms/tegra124-mocha-wireless.dtsi"
 
 / {
 	model = "NVIDIA Tegra124 TN8";
