@@ -534,6 +534,12 @@ static struct of_dev_auxdata ardbeg_auxdata_lookup[] __initdata = {
 	OF_DEV_AUXDATA("nvidia,icera-i500", 0, "tegra_usb_modem_power", NULL),
 	OF_DEV_AUXDATA("nvidia,ptm", 0x7081c000, "ptm", NULL),
 	OF_DEV_AUXDATA("nvidia,tegra30-hda", 0x70030000, "tegra30-hda", NULL),
+	OF_DEV_AUXDATA("nvidia,tegra124-sdhci", 0x700b0600, "sdhci-tegra.3", 
+			NULL),
+	OF_DEV_AUXDATA("nvidia,tegra124-sdhci", 0x700b0400, "sdhci-tegra.2", 
+			NULL),
+	OF_DEV_AUXDATA("nvidia,tegra124-sdhci", 0x700b0000, "sdhci-tegra.0", 
+			NULL),
 	{}
 };
 #endif
