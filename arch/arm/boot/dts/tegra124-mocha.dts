@@ -69,6 +69,7 @@
 	i2c@7000c700 {
 		nvidia,clock-always-on;
 		clock-frequency = <400000>;
+  		status = "okay";
 	};
 	
 	tegra_pwm: pwm@7000a000 {

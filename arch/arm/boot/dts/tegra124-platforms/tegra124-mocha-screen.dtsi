@@ -15,6 +15,7 @@
  */
 
 #include "../panel-s-wqxga-7-9-x6.dtsi"
+#include "tegra124-mocha-synaptics-touchscreen.dtsi"
 
 / {
 	host1x {
