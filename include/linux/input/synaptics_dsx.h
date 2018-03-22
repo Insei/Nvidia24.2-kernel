@@ -31,7 +31,7 @@
  */
 struct synaptics_dsx_cap_button_map {
 	unsigned char nbuttons;
-	unsigned char *map;
+	unsigned int *map;
 };
 
 /*
@@ -60,11 +60,16 @@ struct synaptics_dsx_board_data {
 	bool y_flip;
 	bool swap_axes;
 	int irq_gpio;
+	int irq_on_state;
 	int power_gpio;
+	int dcdc_gpio;
 	int power_on_state;
 	int reset_gpio;
 	int reset_on_state;
 	unsigned long irq_flags;
+	const char *fw_name;
+	const char *self_test_name;
+	unsigned short device_descriptor_addr;
 	unsigned int panel_x;
 	unsigned int panel_y;
 	unsigned int power_delay_ms;
@@ -73,7 +78,13 @@ struct synaptics_dsx_board_data {
 	unsigned int byte_delay_us;
 	unsigned int block_delay_us;
 	unsigned char *regulator_name;
+	u32 power_gpio_flags;
+	u32 dcdc_gpio_flags;
+	u32 reset_gpio_flags;
+	u32 irq_gpio_flags;
 	int (*gpio_config)(int gpio, bool configure, int dir, int state);
+	const char *pwr_reg_name;
+	const char *bus_reg_name;
 	struct synaptics_dsx_cap_button_map *cap_button_map;
 };
 

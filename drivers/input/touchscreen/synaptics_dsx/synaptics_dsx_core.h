@@ -92,7 +92,7 @@ enum exp_fn {
 };
 
 struct synaptics_dsx_hw_interface {
-	const struct synaptics_dsx_board_data *board_data;
+	struct synaptics_dsx_board_data *board_data;
 	const struct synaptics_dsx_bus_access *bus_access;
 };
 
