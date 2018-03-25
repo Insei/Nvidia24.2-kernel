@@ -75,15 +75,5 @@
 	tegra_pwm: pwm@7000a000 {
 		clocks = <&tegra_car 17>;
 	};
-	
-	pwmleds {
-		compatible = "pwm-leds";
-		button_led {
-			label = "button-backlight";
-			pwms = <&tegra_pwm 1 10000>;
-			max-brightness = <100>;
-			max-duty = <50>;
-		};
-	};
 };
 
