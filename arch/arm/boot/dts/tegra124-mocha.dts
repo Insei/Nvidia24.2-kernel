@@ -21,14 +21,14 @@
 
 #include "tegra124-tn8.dtsi"
 #include "tegra124-platforms/tegra124-tn8-emc-e1922-1100-a00.dtsi"
-#include "tegra124-platforms/tegra124-mocha-gpio-e1780.dtsi"
-#include "tegra124-platforms/tegra124-mocha-keys-e1780.dtsi"
-#include "tegra124-platforms/tegra124-mocha-pinmux-e1780.dtsi"
-#include "tegra124-platforms/tegra124-mocha-sysedp.dtsi"
-#include "tegra124-platforms/tegra124-mocha-power-tree.dtsi"
-#include "tegra124-platforms/tegra124-mocha-screen.dtsi"
-#include "tegra124-platforms/tegra124-mocha-sdhci.dtsi"
-#include "tegra124-platforms/tegra124-mocha-wireless.dtsi"
+#include "tegra124-platforms/mocha/tegra124-mocha-gpio-e1780.dtsi"
+#include "tegra124-platforms/mocha/tegra124-mocha-keys-e1780.dtsi"
+#include "tegra124-platforms/mocha/tegra124-mocha-pinmux-e1780.dtsi"
+#include "tegra124-platforms/mocha/tegra124-mocha-sysedp.dtsi"
+#include "tegra124-platforms/mocha/tegra124-mocha-power-tree.dtsi"
+#include "tegra124-platforms/mocha/tegra124-mocha-screen.dtsi"
+#include "tegra124-platforms/mocha/tegra124-mocha-sdhci.dtsi"
+#include "tegra124-platforms/mocha/tegra124-mocha-wireless.dtsi"
 
 / {
 	model = "NVIDIA Tegra124 TN8";

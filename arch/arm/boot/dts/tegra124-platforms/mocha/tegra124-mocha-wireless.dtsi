@@ -1,5 +1,5 @@
 /*
- * arch/arm/boot/dts/tegra124-platforms/tegra124-mocha-wireless.dtsi
+ * arch/arm/boot/dts/tegra124-platforms/mocha/tegra124-mocha-wireless.dtsi
  *
  * Copyright (c) 2018, Smoke team. All rights reserved.
  *
