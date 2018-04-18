@@ -43,7 +43,7 @@
 	
 	/* SDcard */
 	sdmmc3: sdhci@700b0400 {
-		id = <0>;
+		id = <2>;
 		mmc-ocr-mask = <3>;
 		cd-gpios = <&gpio TEGRA_GPIO(V, 2) 0>;
 		tap-delay = <0>;
